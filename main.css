@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: hsl(0, 0%, 71%);
+}
+section{   
+    width: 100vw;
+    height: 100vh;
+    padding-top: 15rem;
+    background-color: hsl(0, 0%, 13%);
+    position: relative;
+}
+h1, h2, h3{
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 500;
+    margin: 1rem;
+}
+h1{
+    font-size: 6rem;
+}
+h2{
+    font-weight: 400;
+}
+h3{
+    font-weight: 300;
+}
+a{
+    display: inline-block;
+    padding: .2em .8em;
+    text-decoration: none;
+    border: none;
+    border-radius: 40px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: hsl(0, 0%, 21%);
+}
+a:active{
+    background-color: hsl(0, 0%, 38%);
+
+}
+#no{
+    position: absolute;
+}
+a:last-child{
+    margin-left: 4rem;
+}
+
+div{
+    background-color: hsl(0, 0%, 15%);
+    display: grid;
+    place-content: center;
+    position:absolute;
+    width: 80%;
+    height: 60%;
+    top: -100%;
+    left: 50%;
+    translate: -50% 0;
+    border-radius: 12px;
+    z-index: 100;
+}
+
+@keyframes glitch{
+    from{
+        background-color: black;
+    }
+    to{
+        background-color: white;
+    }
+}
+
